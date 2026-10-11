@@ -43,8 +43,8 @@ When the **requested storage time** is specified, the simulator uses the smalles
 
 The quantum evolution is an **ideal pure-loss channel**, optionally followed by a deterministic phase rotation:
 
-* **Fock input:** (\\rho\_{\\mathrm{out}}=(1-\\eta)|0\\rangle\\langle0|+\\eta|1\\rangle\\langle1|). Photon retrieval probability is (\\eta); the loss-only conditional state, when a photon survives, is unchanged.
-* **Squeezed input:** (V\_{\\mathrm{out}}=\\eta,\\mathcal R(\\phi)V\_{\\mathrm{in}}\\mathcal R(\\phi)^T+(1-\\eta)I/2), using vacuum quadrature variance (1/2).
+* **Fock input:** ($$\\rho\_{\\mathrm{out}}=(1-\\eta)|0\\rangle\\langle0|+\\eta|1\\rangle\\langle1|$$). Photon retrieval probability is ($$\\eta$$); the loss-only conditional state, when a photon survives, is unchanged.
+* **Squeezed input:** ($$V\_{\\mathrm{out}}=\\eta,\\mathcal R(\\phi)V\_{\\mathrm{in}}\\mathcal R(\\phi)^T+(1-\\eta)I/2$$), using vacuum quadrature variance ($$1/2$$).
 * **Two-mode squeezed input:** independent loss maps are applied to either one or both modes; Gaussian covariance matrices yield logarithmic negativity and EPR variances.
 
 **Scope:** The model neglects phase *noise*, mode mismatch, dispersion, finite bandwidth, active switching, detector imperfections, and hardware-specific engineering constraints. A fixed phase rotation changes the orientation of quadratures but does **not** by itself destroy entanglement. A free-space reflection-loss trend should **not** be extrapolated directly to photonic integrated circuits (PICs), whose loss mechanisms are different.
@@ -75,7 +75,7 @@ Expected results (rounded):
 |Two-mode log negativity (both modes stored, (r=0.8))|1.774871|
 |Two-mode output purity (both stored)|0.759506|
 
-**Important:** The UI uses a *single input squeezing slider* for both single-mode and two-mode cases, converted as (r = dB * ln(10)/20). Thus, to reproduce the **two-mode (r=0.8)** benchmark in the UI, set the slider to approximately **6.949 dB**, rather than 10 dB. Alternatively, use the notebook's underlying `entanglement\_diagnostics(memory, 1000, 0.8, "both")` directly.
+**Important:** The UI uses a *single input squeezing slider* for both single-mode and two-mode cases, converted as ($$r = dB * ln(10)/20$$). Thus, to reproduce the **two-mode (r=0.8)** benchmark in the UI, set the slider to approximately **6.949 dB**, rather than 10 dB. Alternatively, use the notebook's underlying `entanglement\_diagnostics(memory, 1000, 0.8, "both")` directly.
 
 For an exact (N=1000) benchmark use the physics functions (or the reflection-count interface if present). With the V1 final UI's **time-based slider**, requesting 3.0 µs instead produces (N\\approx900) and different results.
 
