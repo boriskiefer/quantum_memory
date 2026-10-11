@@ -32,12 +32,12 @@ Open **`sim_quantum_memory_V1.ipynb`** in JupyterLab, select the environment's P
 
 ## Model and conventions
 
-For mirror power reflectivity (R), input/output coupling efficiencies (\\eta\_{\\mathrm{in}},\\eta\_{\\mathrm{out}}), effective optical path per reflection (L), and number of reflections (N):
+For mirror power reflectivity (R), input/output coupling efficiencies ($$\\eta\_{\\mathrm{in}},\\eta\_{\\mathrm{out}}$$), effective optical path per reflection ($$L$$), and number of reflections ($$N$$):
 
-\[
+$$
 \\eta(N) = \\eta\_{\\mathrm{in}}\\eta\_{\\mathrm{out}}R^N,
 \\qquad t(N) = \\frac{NL}{c}.
-]
+$$
 
 When the **requested storage time** is specified, the simulator uses the smallest nonnegative integer (N) reaching that time, so the actual simulated duration may be slightly longer. The optical path **per reflection is not the device footprint**.
 
