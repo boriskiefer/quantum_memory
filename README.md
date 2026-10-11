@@ -12,8 +12,8 @@ The notebook is designed to make the connection between optical geometry, storag
 
 |File|Description|
 |-|-|
-|`sim\_quantum\_memory\_V1.ipynb`|Interactive simulator, physics modules, plots, and validation tests.|
-|`quantum\_optical\_memory\_educational\_brief.pdf`|Theory, numerical benchmark, educational exercises, and expected answers.|
+|`sim_quantum_memory_V1.ipynb`|Interactive simulator, physics modules, plots, and validation tests.|
+|`quantum_optical_memory_educational_brief.pdf`|Theory, numerical benchmark, educational exercises, and expected answers.|
 |`requirements.txt`|Python dependencies.|
 |`LICENSE`|MIT license.|
 
