@@ -22,17 +22,11 @@ The notebook is designed to make the connection between optical geometry, storag
 Python **3.10 or later** is recommended. From the repository directory:
 
 ```bash
-python -m venv .venv
-# Linux/macOS:
-source .venv/bin/activate
-# Windows PowerShell:
-# .venv\\Scripts\\Activate.ps1
-
 python -m pip install -r requirements.txt
 jupyter lab
 ```
 
-Open **`sim\_quantum\_memory\_V1.ipynb`** in JupyterLab, select the environment's Python kernel, and run the cells **in order**. The final cell displays the `ipywidgets` control panel. Adjust the optical parameters, select a quantum state, and inspect the numerical diagnostics and plots. Notebook cells include validation assertions; check that these pass before interpreting the interactive results.
+Open **`sim_quantum_memory_V1.ipynb`** in JupyterLab, select the environment's Python kernel, and run the cells **in order**. The final cell displays the `ipywidgets` control panel. Adjust the optical parameters, select a quantum state, and inspect the numerical diagnostics and plots. Notebook cells include validation assertions; check that these pass before interpreting the interactive results.
 
 > \*\*Widget note:\*\* The final UI is interactive only in an active notebook with working Jupyter widgets. A static notebook preview on GitHub will not reproduce the live sliders and dropdowns.
 
