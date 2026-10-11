@@ -75,7 +75,7 @@ Expected results (rounded):
 |Two-mode log negativity (both modes stored, (r=0.8))|1.774871|
 |Two-mode output purity (both stored)|0.759506|
 
-**Important:** The UI uses a *single input squeezing slider* for both single-mode and two-mode cases, converted as (r = s\_{\\mathrm{dB}}\\ln(10)/20). Thus, to reproduce the **two-mode (r=0.8)** benchmark in the UI, set the slider to approximately **6.949 dB**, rather than 10 dB. Alternatively, use the notebook's underlying `entanglement\_diagnostics(memory, 1000, 0.8, "both")` directly.
+**Important:** The UI uses a *single input squeezing slider* for both single-mode and two-mode cases, converted as (r = dB * ln(10)/20). Thus, to reproduce the **two-mode (r=0.8)** benchmark in the UI, set the slider to approximately **6.949 dB**, rather than 10 dB. Alternatively, use the notebook's underlying `entanglement\_diagnostics(memory, 1000, 0.8, "both")` directly.
 
 For an exact (N=1000) benchmark use the physics functions (or the reflection-count interface if present). With the V1 final UI's **time-based slider**, requesting 3.0 µs instead produces (N\\approx900) and different results.
 
